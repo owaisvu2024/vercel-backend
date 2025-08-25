@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm install && npm run build",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/$1"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/backend/$1"
+    }
+  ]
+}
